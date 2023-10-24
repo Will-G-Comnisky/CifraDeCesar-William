@@ -12,21 +12,23 @@
     <div class="main-container">
         <h1>Cifrador e Descifrador</h1>
         <h2>Digite seu texto:</h2>
-        <textarea name="text" id="idText" cols="30" rows="10">
+        <textarea name="text" id="idText" cols="40" rows="16">
         </textarea><br>
         <input type="radio" id="idCifraRadio" name="nmCifraRadio" value="Cifrar" checked />
-        <label for="idCifraRadio">Cifrar</label>
+        <label id="idLabelCifra" for="idCifraRadio">Cifrar</label>
         <input type="text" id="idCifra" placeholder="Informe a cifra (0-9 ou A-Z)" maxlength="1">
         <input type="button" id="idCifrarBtn" value="Cifrar texto">
         <br>
         <input type="radio" id="idDescifraRadio" name="nmCifraRadio" value="Descifrar" />
-        <label for="idDescifraRadio">Descifrar</label>
+        <label id="idLabelDescifra" for="idDescifraRadio">Descifrar</label>
         <input type="text" id="idDescifra" placeholder="Informe a cifra (0-9 ou A-Z)" maxlength="1">
         <input type="button" id="idDescifrarBtn" value="Descifrar texto">
         <br><br>
-        <output id="idOutCifrado"></output>
-        <br><br>
-        <output id="idOutDescifrado"></output>
+        <div class="output-div">
+            <output id="idOutCifrado"></output>
+            <br><br>
+            <output id="idOutDescifrado"></output>
+        </div>
         
 
     </div>
